@@ -1,5 +1,5 @@
 # 余添耗文化传媒有限公司 #
-[新闻](https://wanghaoran2211.github.io/yutianhaocompany/news.md)
+[新闻](https://wanghaoran2211.github.io/yutianhaocompany/news)
 
 ### 业务范围 ###
 
