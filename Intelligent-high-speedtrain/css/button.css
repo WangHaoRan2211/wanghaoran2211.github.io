@@ -1,0 +1,79 @@
+.btn {
+  width: 200px;
+  height: 60px;
+  background: #7cacae;
+  color: #fff;
+  font-size: 24px;
+  line-height: 60px;
+  margin: 30px auto;
+  border-radius: 999px;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  width: 240px;
+  height: 80px;
+  background-color: yellow;
+  line-height: 80px;
+  margin: 80px auto;
+  color: #000;
+}
+
+
+.btn2 {
+  background: linear-gradient(to bottom, #D87CFF, #310051);
+  width: 200px;
+  height: 60px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 60px;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 25px;
+  box-shadow: 4px 4px 4px 4px #626262;
+  margin: 30px auto;
+  transition: 0.4s;
+}
+
+
+.btn2:hover {
+  background: linear-gradient(to bottom, #D87CFF, #6F13AA);
+  /*width: 240px;
+  height: 80px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 80px;*/
+  color: #FFFFFF;
+  font-weight: 800;
+  /*font-size: 33px;
+  box-shadow: 8px 8px 24px 6px #626262;*/
+}
+
+.btn3 {
+  margin: 30px auto;
+  width: 240px;
+  height: 60px;
+  border-radius: 120px;
+  text-align: center;
+  line-height: 60px;
+  color: #8527ff;
+  font-weight: 800;
+  font-size: 25px;
+  border: 3px solid #8527ff;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.4s;
+}
+
+.btn3:hover {
+  margin: 30px auto;
+  width: 240px;
+  height: 60px;
+  border-radius: 120px;
+  text-align: center;
+  line-height: 60px;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 25px;
+  border: 3px solid #8527ff;
+  background-color: #8527ff;
+}

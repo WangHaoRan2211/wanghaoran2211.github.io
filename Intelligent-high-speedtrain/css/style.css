@@ -1,0 +1,43 @@
+body{
+  background:white url(../image/large_aubergine.jpg) center center;
+  background-size:cover;
+  color: #fff;
+  position: relative;
+}
+h1{
+  font-size: 36px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+p{
+  font-size: 16px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+a{
+  text-decoration: none;
+}
+.con{
+  position:absolute;
+  top:50%;
+  text-align:center;
+  width:100%;
+  transform:translateY(-50%);
+}
+.btn{
+  width:200px;
+  height:60px;
+  background:#890cbb;
+  color:#fff;
+  font-size:24px;
+  line-height:60px;
+  margin:30px auto;
+  border-radius:999px;
+  transition:0.4s;
+}
+.btn:hover{
+  width:240px;
+  height:80px;
+  background-color:rgb(171, 68, 255);
+  line-height:80px;
+  margin:80px auto;
+  color:#000;
+}

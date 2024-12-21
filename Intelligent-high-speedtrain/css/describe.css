@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(202, 173, 110);
+}
+.banner img{
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.title{
+  margin: 20px;
+  text-align: center;
+}
+.title h1{
+  font-size: 30px;
+}
+.text{
+  width: 800px;
+  margin: auto;
+  background-color: #ff5858;
+  padding: 20px;
+  border-radius: 6px;
+  text-shadow: 2.5px 2.5px 3px #585858;
+  box-shadow: 3px 3px 5px 5px #868686;
+}
+text p{
+  font-size: 18px;
+  line-height: 1.4;
+}
