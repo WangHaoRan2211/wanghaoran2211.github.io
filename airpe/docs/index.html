@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>AirPE-RAMOS 技术文档</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="../index.html">首页</a>
+        <a href="#overview">概述</a>
+        <a href="#features">特性</a>
+        <a href="#usage">使用说明</a>
+        <a href="#qa">常见问题</a>
+    </nav>
+
+    <h1 id="overview">AirPE-RAMOS 技术文档</h1>
+    <p>AirPE-RAMOS 是一款基于内存运行的轻量化PE系统，主要特点包括：</p>
+    
+    <section id="features">
+        <h2>核心特性</h2>
+        <div class="features-list">
+            <div class="feature-card">
+                <h3>功能全面</h3>
+                <p>可以启动微信，QQ，B站，Microsoft Office甚至MC</p>
+            </div>
+            <div class="feature-card">
+                <h3>超多软件</h3>
+                <p>包含32个内置软件，覆盖维护安装系统需求</p>
+            </div>
+            <div class="feature-card">
+                <h3>插件支持</h3>
+                <p>Python的强大拓展性，让AirPE支持.zip格式的AirPE插件包，7z格式的部分Edgeless插件包。只需要把它们放在U盘的AirPE\Extensions文件夹下</p>
+            </div>
+            <div class="feature-card">
+                <h3>硬件兼容</h3>
+                <p>支持UEFI/Legacy双启动模式</p>
+            </div>
+            <div class="feature-card">
+                <h3>自定义配置</h3>
+                <p>编辑AirPE\custom下的custom.ini，PE启动时将会加载它！</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="usage">
+        <h2>使用说明</h2>
+        <h3>系统要求</h3>
+        <ul>
+            <li>内存 ≥ 4GB（若安装插件需6GB）</li>
+            <li>支持USB 2.0接口以上</li>
+            <li>存储空间 ≥ 1.53GB</li>
+        </ul>
+
+        <h3>部署步骤(U: 替换为U盘盘符，AirPE.iso替换为AirPE ISO文件位置)</h3>
+        <h4>Linux：</h4>
+        <div class="code-block">
+# 制作启动盘
+dd if=AirPE.iso of=/dev/sdX bs=4M status=progress
+        </div>
+        <h4>Windows：</h4>
+        <div class="code-block">
+# 制作启动盘
+ISOBURN.EXE /Q U: AirPE.iso
+        </div>
+    </section>
+
+    <div class="warning">
+        ⚠️ 注意：操作前请备份重要数据！
+    </div>
+
+
+    <section id="qa">
+        <h2>常见问题</h2>
+        <h3>Q: 启动时卡在LOGO界面</h3>
+        <p>请尝试以下解决方案：</p>
+        <ol>
+            <li>检查USB接口是否接触良好</li>
+            <li>关闭Secure Boot选项</li>
+            <li>更新主板BIOS版本</li>
+        </ol>
+        <h3>Q: 启动后黑屏重启</h3>
+        <p>这是内存不够了，请尝试以下解决方案：</p>
+        <ol>
+            <li>如果用的是虚拟机，分配内存不要少于4GB</li>
+            <li>如果加载了插件包，把插件包禁用了再启动</li>
+            <li>如果以上方法都没用，给电脑加内存</li>
+        </ol>
+    </section>
+</body>
+</html>
