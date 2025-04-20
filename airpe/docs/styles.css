@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #2c3e50;
+    --primaryhover-color: #1e2b38;
+    --secondary-color: #3498db;
+    --hover-color: #dfdfdf;
+    --code-bg: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+
+.nav-bar {
+    background: var(--primary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.nav-bar a {
+    color: white;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-weight: 600;
+}
+.nav-bar a:hover {
+    color: var(--hover-color);
+    text-decoration: none;
+    margin-right: 2rem;
+    font-weight: 700;
+}
+.sonnav-bar {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.sonnav-bar a {
+    color: var(--primary-color);
+    transition: all 0.2s ease;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-weight: 500;
+}
+.sonnav-bar a:hover {
+    color: var(--primaryhover-color);
+    text-decoration: none;
+    margin-right: 2rem;
+    font-weight: 600;
+}
+
+h1, h2, h3, h4 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.3em;
+}
+
+.code-block {
+    background: var(--code-bg);
+    padding: 1rem;
+    border-radius: 6px;
+    font-family: Consolas, Monaco, monospace;
+    margin: 1rem 0;
+    overflow-x: auto;
+}
+
+.warning {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.good {
+    background: #e1ffcd;
+    border-left: 4px solid #62ff07;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.error {
+    background: #ffcdcd;
+    border-left: 4px solid #ff0707;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.feature-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .nav-bar {
+        display: none;
+    }
+}
